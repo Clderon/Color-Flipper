@@ -1,0 +1,99 @@
+:root {
+  --fuentePrincipal: "Poppins", system-ui, sans-serif;
+  --fuenteSecundaria: "Roboto", system-ui, sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: var(--fuentePrincipal);
+  font-size: 1rem;
+  line-height: 1.8rem;
+}
+
+.nav-center {
+  display: flex;
+  padding: 2rem;
+  justify-content: space-around;
+  border-bottom: 1px solid #ececec.9;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  letter-spacing: 0.3rem;
+}
+
+.nav-center h1 {
+  font-size: 2rem;
+  color: #09f;
+}
+
+.nav-center ul {
+  display: flex;
+  gap: 4rem;
+}
+.nav-links li {
+  list-style-type: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #000;
+  font-weight: 600;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  width: 90%;
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+}
+
+.container h2{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    color: #ececec;
+}
+
+.container .color{
+    background-color: #0099ff;
+    border-radius: .5rem;
+    padding: 2rem;
+    width: 100vh;
+}
+
+.container div{
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+  height: 5rem;
+  width: 15rem;
+  border: 2px solid #000;
+  outline: none;
+  border-radius: 0.8rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color .3s ease-in-out, color .3s ease-in-out, border .4s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #09f;
+  color: #fff;
+  border: none;
+}
